@@ -1,0 +1,5 @@
+[functions.study-baseline]
+verify_jwt = false
+
+[functions.study-ai]
+verify_jwt = false

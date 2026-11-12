@@ -1,0 +1,54 @@
+:root { font-family: Tahoma, Verdana, Arial, sans-serif; font-size: 14px; color: #111; background: #fff; }
+* { box-sizing: border-box; }
+body { margin: 0; line-height: 1.5; }
+.page { width: min(760px, calc(100% - 32px)); margin: 20px auto 45px; border: 1px solid #999; background: #fff; }
+header { padding: 13px 18px; border-bottom: 2px solid #777; background: #e6e6e6; }
+h1 { font-size: 20px; margin: 0 0 2px; font-weight: bold; }
+.subtitle { font-size: 12px; color: #444; }
+main { padding: 16px 18px 22px; }
+h2 { font-size: 17px; margin: 0 0 12px; }
+h3 { font-size: 15px; margin: 18px 0 7px; }
+p { margin: 8px 0 13px; }
+ol { padding-left: 24px; }
+li { margin-bottom: 5px; }
+hr { height: 1px; background: #aaa; border: 0; margin: 17px 0; }
+label { display: inline-block; }
+input[type='text'], input:not([type]), select { display: block; width: min(100%, 360px); margin: 7px 0; border: 1px solid #777; background: #fff; color: #111; padding: 6px; font: inherit; border-radius: 0; }
+select { width: min(100%, 510px); }
+button:not(.help-button) { font: inherit; padding: 5px 15px; background: #e6e6e6; border-top: 2px solid #fff; border-left: 2px solid #fff; border-right: 2px solid #666; border-bottom: 2px solid #666; color: #111; cursor: pointer; border-radius: 0; }
+button:not(.help-button):active { border-top-color: #666; border-left-color: #666; border-right-color: #fff; border-bottom-color: #fff; }
+button:disabled { opacity: 0.65; cursor: default; }
+button:focus-visible, input:focus-visible, select:focus-visible { outline: 2px solid #0645ad; outline-offset: 2px; }
+.definition-table { border-collapse: collapse; width: 100%; }
+.definition-table th, .definition-table td { border: 1px solid #aaa; padding: 7px 8px; vertical-align: top; text-align: left; }
+.definition-table th { width: 180px; background: #eee; }
+.progress { padding: 8px; background: #eee; border: 1px solid #aaa; margin: 0 0 16px; }
+.progress span { float: right; color: #555; }
+.comment-block { border: 1px solid #aaa; margin: 12px 0; }
+.block-title { padding: 5px 8px; background: #e7e7e7; border-bottom: 1px solid #aaa; font-weight: bold; }
+.block-content { padding: 10px; white-space: pre-wrap; overflow-wrap: anywhere; }
+.choices { margin: 20px 0 15px; border: 1px solid #aaa; padding: 10px 12px 8px; }
+.choices legend { padding: 0 5px; }
+.option { display: flex; align-items: center; gap: 9px; padding: 4px 0; cursor: pointer; }
+.option input { accent-color: #444; margin: 0; }
+.confidence-heading { display: flex; align-items: center; gap: 8px; margin-top: 18px; }
+.help-button { display: inline-flex; justify-content: center; align-items: center; width: 19px; height: 19px; background: #eee; color: #111; border: 1px solid #555; border-radius: 50%; font-size: 12px; font-weight: bold; cursor: pointer; }
+.confidence-help { margin: 8px 0; border: 1px solid #999; background: #f3f3f3; padding: 10px; }
+.confidence-help ul { padding-left: 19px; margin: 7px 0 0; }
+.slider-container { width: min(100%, 480px); margin: 14px 0 18px; }
+.confidence-readout { margin-bottom: 8px; font-weight: normal; min-height: 21px; }
+.confidence-slider { display: block; width: 100%; margin: 0; cursor: pointer; accent-color: #555; }
+.slider-ticks { display: flex; justify-content: space-between; padding: 0 3px; font-size: 12px; color: #333; }
+.slider-ends { display: flex; justify-content: space-between; color: #555; font-size: 11px; margin-top: 4px; }
+.error { background: #fff2f2; border: 1px solid #a33; padding: 8px; color: #780000; }
+.note { font-size: 12px; color: #444; }
+.status { font-style: italic; }
+footer { border-top: 1px solid #aaa; padding-top: 14px; margin-top: 20px; font-size: 11px; color: #555; }
+@media (max-width: 520px) { main { padding: 13px 12px; } header { padding: 12px; } .definition-table th { width: 135px; } .progress span { float: none; margin-left: 12px; } }
+
+/* Same early-web styling as the baseline; an extra gray box displays AI output. */
+.ai-suggestion { border: 1px solid #777; margin: 12px 0 18px; background: #f7f7f7; }
+.ai-suggestion .block-title { background: #ddd; }
+.ai-suggestion .block-content { padding: 10px; }
+.ai-suggestion .block-content .note { margin: 7px 0 0; }
+.ai-score { margin: 7px 0 0; }
